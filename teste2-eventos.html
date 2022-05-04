@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+</head>
+<body>
+    
+    <div class="header">
+        <h1>Calculadora DOM</h1>
+    </div>
+
+    <div class="content">
+
+        <input type="number" name="n1" id="n1" class="input_number" placeholder="Numero1">
+
+        <input type="number" name="n2" id="n2" class="input_number" placeholder="Numero2">
+
+        <input type="button" value="+" id="somar" class="btn_calcular" onclick="sum()">
+
+        <input type="submit" value="limpar" id="limpar" onclick="limpar()">
+
+        <p id="result" class="result">Resultado: </p>
+
+
+    </div>
+
+</body>
+
+    <script>
+
+        function limpar(){
+            document.getElementById("n1").value = "";
+
+            document.getElementById("n2").value = "";
+
+            document.getElementById("result").innerHTML = "Resultado: "
+        }
+
+
+        function sum(){
+            var n1 = document.getElementById("n1").value
+
+            var n2 = document.getElementById("n2").value
+
+            n1 = Number(n1) // CONVERTENDO A STRING EM NÚMERO.
+            n2 = Number(n2)
+
+            var result = n1 + n2;
+
+            document.getElementById("result").innerHTML = `O Resultado é: ${result}`
+        }
+        
+
+
+    </script>
+
+
+
+</html>
