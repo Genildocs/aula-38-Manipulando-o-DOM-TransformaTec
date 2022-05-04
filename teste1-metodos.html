@@ -23,16 +23,23 @@
     </form>
 
     <script>
-
+        // ALGUNS METODOS DO DOM 
+        
         var element = document.getElementById("header") 
-        // Estou pegando o valor da div pelo id=header atribuido a ela e atribuindo a varivel element
+        // Estou pegando o valor da div pelo id=header atribuido a ela e atribuindo na varivel element.
 
         console.log(element)
 
         var dado = document.getElementById("nome").value 
-        // Estou pegando o valor do compo input pelo valor atribuido nele e aribuindo na variavel dado.
+        // Estou pegando o valor do compo input pelo valor atribuido nele e atribuindo na variavel dado.
 
         console.log(dado)
+
+
+        var elemento = document.querySelector("#header")
+        // Estou pegando o 1º valor com base no seletor CSS passado como parametro e atribuindo a variavel elemento.
+        // querySelectorAll pega todos os seletores. 
+        console.log(elemento)
 
     </script>
 </body>
