@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando o DOM</title>
+</head>
+
+<body>
+    <div class="header" id="header">
+        <!--Classes e Id nó de atributo do elemento div-->
+
+        <input type="submit" value="Clique em mim">
+
+    </div>
+
+    <form>
+
+        <input type="text" id="nome" value="Genildo">
+
+    </form>
+
+    <script>
+
+        var element = document.getElementById("header") 
+        // Estou pegando o valor da div pelo id=header atribuido a ela e atribuindo a varivel element
+
+        console.log(element)
+
+        var dado = document.getElementById("nome").value 
+        // Estou pegando o valor do compo input pelo valor atribuido nele e aribuindo na variavel dado.
+
+        console.log(dado)
+
+    </script>
+</body>
+
+</html>
