@@ -15,18 +15,20 @@
 
     <div class="content">
 
-        <!--Declaração de elemento que recebe o número de entrada -->
-        
+        <!--Declaração de elemento que recebe o número de entrada -->  
         <input type="number" name="n1" id="n1" class="input_number" placeholder="Numero1">
 
         <input type="number" name="n2" id="n2" class="input_number" placeholder="Numero2">
-
+        
+        <!--Declaração dos botões que chamam funções de cálculo por meio de um evento onclick -->
         <input type="button" value="+" id="somar" class="btn_calcular" onclick="sum()">
 
         <input type="button" value="-" id="subtracao" class="btn_calcular" onclick="subtrair()">
-
+        
+          <!--Botão de "limpar"-->
         <input type="submit" value="limpar" id="limpar" onclick="limpar()">
-
+        
+          <!--Apresenta o resultado na tela. -->
         <p id="result" class="result">Resultado: </p>
 
 
